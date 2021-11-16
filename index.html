@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>HTML: Hypertext Markup Language</header>
+        <ul>
+            <li><a class="nav-link" href="#introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#what-is-html">So what is HTML?</a></li>
+            <li><a class="nav-link" href="#html-element">Anatomy of an HTML element</a></li>
+            <li><a class="nav-link" href="#nesting">Nesting elements</a></li>
+            <li><a class="nav-link" href="#empty-elements">Empty elements</a></li>
+            <li><a class="nav-link" href="#html-document">Anatomy of an HTML document</a></li>
+            <li><a class="nav-link" href="#images">Images</a></li>
+            <li><a class="nav-link" href="#marking-up-text">Marking up Text</a></li>
+            <li><a class="nav-link" href="#headings">Headings</a></li>
+            <li><a class="nav-link" href="#paragraphs">Paragraphs</a></li>
+            <li><a class="nav-link" href="#lists">Lists</a></li>
+            <li><a class="nav-link" href="#links">Links</a></li>
+            <li><a class="nav-link" href="#reference">Reference</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="introduction">
+            <header>Introduction</header>
+            <hr class="line">
+            <article>
+                <p><strong>HTML</strong> (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).</p>
+                <p>"Hypertext" refers to links that connect web pages to one another, either within a single website or between websites. Links are a fundamental aspect of the Web. By uploading content to the Internet and linking it to pages created by other people, you become an active participant in the World Wide Web.</p>
+                <p>HTML uses "markup" to annotate text, images, and other content for display in a Web browser. HTML markup includes special "elements" such as <code class="codespan">&lt;head&gt;</code>, <code class="codespan">&lt;title&gt;</code>, <code class="codespan">&lt;body&gt;</code>, <code class="codespan">&lt;header&gt;</code>, <code class="codespan">&lt;footer&gt;</code>, <code class="codespan">&lt;article&gt;</code>, <code class="codespan">&lt;section&gt;</code>, 
+                    <code class="codespan">&lt;p&gt;</code>, <code class="codespan">&lt;div&gt;</code>, <code class="codespan">&lt;span&gt;</code>, <code class="codespan">&lt;img&gt;</code>, <code class="codespan">&lt;aside&gt;</code>, <code class="codespan">&lt;audio&gt;</code>, <code class="codespan">&lt;canvas&gt;</code>, <code class="codespan">&lt;datalist&gt;</code>, <code class="codespan">&lt;details&gt;</code>, <code class="codespan">&lt;embed&gt;</code>, 
+                    <code class="codespan">&lt;nav&gt;</code>, <code class="codespan">&lt;output&gt;</code>, <code class="codespan">&lt;progress&gt;</code>, <code class="codespan">&lt;video&gt;</code>, <code class="codespan">&lt;ul&gt;</code>, <code class="codespan">&lt;ol&gt;</code>, <code class="codespan">&lt;li&gt;</code> and many others.</p>
+                <p>An HTML element is set off from other text in a document by "tags", which consist of the element name surrounded by "<code class="codespan">&lt;</code>" and "<code class="codespan">&gt;</code>". The name of an element inside a tag is case insensitive. That is, it can be written in uppercase, lowercase, or a mixture. For example, the <code class="codespan">&lt;title&gt;</code> tag can be written as <code class="codespan">&lt;Title&gt;</code>, <code class="codespan">&lt;TITLE&gt;</code>, or in any other way.</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="what-is-html">
+            <header>So what is HTML?</header>
+            <hr class="line">
+            <article>
+                <p>HTML is a <em>markup language</em> that defines the structure of your content. HTML consists of a series of <u>elements</u>, which you use to enclose, or wrap, different parts of the content to make it appear certain way or act a certain way. The enclosing <u>tags</u> can make a word or image hyperlink to somewhere else, can italicize words, can make the font bigger or smaller, and so on. For example, take the following line of content:</p>
+                <code class="c2span">My cat is very grumpy</code>
+                <p>If we wanted the line to stand by itself, we could specify that it is a paragraph by enclosing it in paragraph tags:</p>
+                <code class="c2span">&lt;p&gt;My cat is very grumpy&lt;/p&gt;</code>
+            </article>
+        </section>
+
+        <section class="main-section" id="html-element">
+            <header>Anatomy of an HTML element</header>
+            <hr class="line">
+            <article>
+                <p>Let's explore our paragraph element a bit further:</p>
+                <img src="img/paragraph.png" alt="anatomy-of-html" width="400px">
+                <p>The main parts of our element are as follows:</p>
+                <ul>
+                    <li><code class="codespan"><strong>The opening tag:</strong></code>This consists of the name of the element (in this case, p), wrapped in opening and closing <strong>angle brackets</strong>. This states where the element begins or starts to take effect — in this case where the paragraph begins.</li>  
+                    <li><code class="codespan"><strong>The closing tag:</strong></code>This is the same as the opening tag, except that it includes a <em>forward slash</em> before the element name. This states where the element ends — in this case where the paragraph ends. Failing to add a closing tag is one of the standard beginner errors and can lead to strange results.</li>
+                    <li><code class="codespan"><strong>The content:</strong></code>This is the content of the element, which in this case is just text.</li>
+                    <li><code class="codespan"><strong>The element:</strong></code>The opening tag, the closing tag, and the content together comprise the element.</li>
+                </ul>
+                <p>Elements can also have attributes that look like the following:</p>
+                <img src="img/attribute.png" alt="atrributes" width="400px">
+                <p>Attributes contain extra information about the element that you don't want to appear in the actual content. Here, <code class="codespan"><strong>class</strong></code> is the attribute <em>name</em> and <code class="codespan"><strong>editor-note</strong></code> is the attribute <em>value</em>. The <code class="codespan"><strong>class</strong></code> attribute allows you to give the element a non-unique identifier that can be used to target it (and any other elements with the same <code class="codespan"><strong>class</strong></code> value) with style information and other things.</p>
+                <p>An attribute should always have the following:</p>
+                <ul>
+                    <li>A space between it and the element name (or the previous attribute, if the element already has one or more attributes).</li>
+                    <li>The attribute name, followed by an equal sign.</li>
+                    <li>The attribute value wrapped by opening and closing quotation marks.</li>
+                </ul>
+
+                <h3 id="nesting">&#9656; Nesting elements</h3>
+                <p>You can put elements inside other elements too — this is called <strong>nesting</strong>. If we wanted to state that our cat is <strong>very</strong> grumpy, we could wrap the word "very" in a <code class="codespan">&lt;strong&gt;</code> element, which means that the word is to be strongly emphasized:</p> 
+                <code class="c2span">&lt;p&gt;My cat is &lt;strong&gt;very&lt;/strong&gt; grumpy.&lt;/p&gt;</code>
+                <p>You do however need to make sure that your elements are properly nested. In the example above, we opened the <code class="codespan">&lt;p&gt;</code> element first, then the <code class="codespan">&lt;strong&gt;</code> element; therefore, we have to close the <code class="codespan">&lt;strong&gt;</code> element first, then the <code class="codespan">&lt;p&gt;</code> element.</p>
+                
+                <h3 id="empty-elements">&#9656; Empty elements</h3>
+                <p>Some elements have no content and are called <strong>empty elements</strong>. Take the <code class="codespan">&lt;img&gt;</code> element that we already have in our HTML page:</p>
+                <code class="c2span">&lt;img src=“images/firefox-icon.png" alt="My test image"&gt;</code>
+                <p>This contains two attributes, but there is no closing <code class="codespan">&lt;img&gt;</code> tag and no inner content. This is because an image element doesn't wrap content to affect it. Its purpose is to embed an image in the HTML page in the place it appears.</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="html-document">
+            <header>Anatomy of an HTML document</header>
+            <hr class="line">
+            <article>
+                <p>That wraps up the basics of individual HTML elements, but they aren't handy on their own. Now we'll look at how individual elements are combined to form an entire HTML page.</p>
+                <code class="c2span">&lt;!DOCTYPE html&gt;<br> &lt;html&gt;<br> &nbsp;&lt;head&gt; <br> &nbsp;&nbsp;&lt;meta charset="utf-8"&gt; <br> &nbsp;&nbsp;&lt;title&gt;My test page&lt;/title&gt; <br> &nbsp;&lt;/head&gt;<br> &nbsp;&lt;body&gt; <br> &nbsp;&nbsp;&lt;img src=“images/firefox-icon.png" alt="My test image"&gt; <br> &nbsp;&lt;/body&gt;<br>&lt;/html&gt;</code>
+                <p>Here we have the following:</p>
+                <ol>
+                    <li><code class="codespan">&lt;!DOCTYPE html&gt;</code> — doctype. It is a required preamble. In the mists of time, when HTML was young (around 1991/92), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML, which could mean automatic error checking and other useful things. However these days, they don't do much and are basically just needed to make sure your document behaves correctly. That's all you need to know for now.</li>
+                    <li><code class="codespan">&lt;html&gt;&lt;/html&gt;</code> — the <code class="codespan">&lt;html&gt;</code>element. This element wraps all the content on the entire page and is sometimes known as the root element.</li>
+                    <li><code class="codespan">&lt;head&gt;&lt;/head&gt;</code> — the <code class="codespan">&lt;head&gt;</code> element. This element acts as a container for all the stuff you want to include on the HTML page that <em>isn't</em> the content you are showing to your page's viewers. This includes things like <ul>keywords</ul> and a page description that you want to appear in search results, CSS to style our content, character set declarations, and more.</li>
+                    <li><code class="codespan">&lt;meta charset="utf-8"&gt;</code> — this element sets the character set your document should use to UTF-8 which includes most characters from the vast majority of written languages. Essentially, it can now handle any textual content you might put on it. There is no reason not to set this and it can help avoid some problems later on.</li>
+                    <li><code class="codespan">&lt;title&gt;&lt;/title&gt;</code> — the <code class="codespan">&lt;title&gt;</code> element. This sets the title of your page, which is the title that appears in the browser tab the page is loaded in. It is also used to describe the page when you bookmark/favorite it.</li>
+                    <li><code class="codespan">&lt;body&gt;&lt;/body&gt;</code> — the <code class="codespan">&lt;body&gt;</code> element. This contains <em>all</em> the content that you want to show to web users when they visit your page, whether that's text, images, videos, games, playable audio tracks, or whatever else.</li>
+                </ol>
+            </article>
+        </section>
+
+        <section class="main-section" id="images">
+            <header>Images</header>
+            <hr class="line">
+            <article>
+                <p>Let's turn our attention to the <code class="codespan">&lt;img&gt;</code> element again:</p>
+                <code class="c2span">&lt;img src=“images/firefox-icon.png" alt="My test image"&gt;</code>
+                <p>As we said before, it embeds an image into our page in the position it appears. It does this via the src (source) attribute, which contains the path to our image file.</p>
+                <p>We have also included an <code class="codespan">&lt;alt&gt;</code> (alternative) attribute. In this attribute, you specify descriptive text for users who cannot see the image, possibly because of the following reasons:</p>
+                <ol>
+                    <li>They are visually impaired. Users with significant visual impairments often use tools called screen readers to read out the alt text to them.</li>
+                    <li>Something has gone wrong causing the image not to display.</li>
+                </ol>
+            </article>
+        </section>
+
+        <section class="main-section" id="marking-up-text">
+            <header>Marking up text</header>
+            <hr class="line">
+            <article>
+                <p>This section will cover some of the essential HTML elements you'll use for marking up the text.</p>
+                
+                <h3 id="headings">&#9656; Headings</h3>
+                <p>Heading elements allow you to specify that certain parts of your content are headings — or subheadings. In the same way that a book has the main title, chapter titles, and subtitles, an HTML document can too. HTML contains 6 heading levels, <code class="codespan">&lt;h1&gt;</code>–<code class="codespan">&lt;h6&gt;</code>, although you'll commonly only use 3 to 4 at most:</p>
+                <code class="c2span">&lt;h1&gt;My main title&lt;/h1&gt; <br> &lt;h2&gt;My top level heading&lt;/h2&gt; <br> &lt;h3&gt;My subheading&lt;/h3&gt; <br> &lt;h4&gt;My sub-subheading&lt;/h4&gt;</code>
+
+                <h3 id="paragraphs">&#9656; Paragraphs</h3>
+                <p>As explained above, <code class="codespan">&lt;p&gt;</code>elements are for containing paragraphs of text; you'll use these frequently when marking up regular text content:</p>
+                <code class="c2span">&lt;p&gt;This is a single paragraph&lt;/p&gt;</code>
+
+                <h3 id="lists">&#9656; Lists</h3>
+                <p>A lot of the web's content is lists and HTML has special elements for these. Marking up lists always consists of at least 2 elements. The most common list types are ordered and unordered lists:</p>
+                <ol>
+                    <li><strong>Unordered List</strong> are for lists where the order of the items doesn't matter, such as a shopping list. These are wrapped in a <code class="codespan">&lt;ul&gt;</code> element</li>
+                    <li><strong>Ordered List</strong> are for lists where the order of the items does matter, such as a recipe. These are wrapped in an <code class="codespan">&lt;ol&gt;</code> element</li>
+                </ol>
+                <p>Each item inside the lists is put inside an <code class="codespan">&lt;li&gt;</code> (list item) element.</p>
+                <p>For example, if we wanted to turn the part of the following paragraph fragment into a list</p>
+                <code class="c2span">&lt;p&gt;At Mozilla, we’re a global community of technologists, thinkers, and builders working together ... &lt;/p&gt;</code>
+                <p>We could modify the markup to this</p>
+                <code class="c2span">&lt;p&gt;At Mozilla, we’re a global community of&lt;/p&gt; <br> &nbsp; <br> &lt;ul&gt; <br> &nbsp;&lt;li&gt;technologists&lt;/li&gt; <br> &nbsp;&lt;li&gt;thinkers&lt;/li&gt; <br> &nbsp;&lt;li&gt;builders&lt;/li&gt; <br> &lt;/ul&gt; <br> &nbsp; <br> &lt;p&gt;working together ... &lt;/p&gt;</code>
+            </article>
+        </section>
+
+        <section class="main-section" id="links">
+            <header>Links</header>
+            <hr class="line">
+            <article>
+                <p>Links are very important — they are what makes the web a web! To add a link, we need to use a simple element — <code class="codespan">&lt;a&gt;</code> — "a" being the short form for "anchor". To make text within your paragraph into a link, follow these steps:</p>
+                <ol>
+                    <li>Choose some text. We chose the text "Mozilla Manifesto".</li>
+                    <li>Wrap the text in an <code class="codespan">&lt;a&gt;</code> element, as shown below: <code class="c2span">&lt;a&gt;Mozilla Manifesto&lt;/a&gt;</code></li>
+                    <li>Give the <code class="codespan">&lt;a&gt;</code> element an <code class="codespan">href</code> attribute, as shown below: <code class="c2span">&lt;a href=""&gt;Mozilla Manifesto&lt;/a&gt;</code></li>
+                    <li>Fill in the value of this attribute with the web address that you want the link to link to: <code class="c2span">&lt;a href="https://www.mozilla.org/en-US/about/manifesto/"&gt;Mozilla Manifesto&lt;/a&gt;</code></li>
+                </ol>
+                <p>You might get unexpected results if you omit the https:// or http:// part, called the protocol, at the beginning of the web address. After making a link, click it to make sure it is sending you where you wanted it to.</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="reference">
+            <header>Reference</header>
+            <hr class="line">
+            <article>
+                <p>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN</a></p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
